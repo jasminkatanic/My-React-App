@@ -1,0 +1,297 @@
+.contact{
+  display: flex;
+  width: 100%;
+  height: 100vh;  
+  flex-direction: column;
+
+  &-top{
+    display: flex;
+    width: 100%;
+    height: 10%;   
+    
+    @include respond(maxNavBar){
+      height: 0;
+      width: 0;
+      display: none;
+    }
+  }
+
+  &-bottom{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    justify-content: center;    
+
+    &-content{
+      display: flex;
+      width: 95%;
+      height: 95%;
+      align-self: center;         
+
+      &-left{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        flex-direction: column;        
+
+        &-top{
+          display: flex;
+          width: 100%;
+          height: 10%;
+          justify-content: center;
+          background: linear-gradient(90deg, $light-blue-home 0%, $dark-blue-home 100%); 
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          &-content{
+            display: flex;
+            width: auto;
+            height: auto;
+            font-size: 2.2rem;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+            align-self: center;
+          }
+        }
+
+        &-middle{
+          display: flex;
+          width: 100%;
+          height: auto;         
+
+          &-content{
+            display: flex;
+            width: auto;
+            height: auto;
+            font-size: 1.2rem;
+            font-family: 'Cairo', sans-serif;
+            font-weight: 400;
+            align-self: center;
+            text-align: justify;
+            hyphens: auto;
+            padding: 2%;
+          }
+        }
+
+        &-bottom{
+          display: flex;
+          width: 100%;
+          height: 10%;
+          justify-content: center;          
+          margin-top: 2%;
+          
+          &:nth-child(3){
+            margin-top: 5%;
+          }
+          
+                   
+
+          &-content{
+            display: flex;
+            width: 55%;
+            height: 95%;
+            align-self: center;
+            background-color: $linked-in-blue;
+            text-decoration: none;
+            cursor: pointer;
+            
+            &-left{
+              display: flex;
+              height: 100%;
+              width: 20%;
+              justify-content: flex-end;              
+
+              &-icon{
+                font-size: 2.5rem;
+                color: $white-color;
+                align-self: center;
+              }
+            }
+
+            &-right{
+              display: flex;
+              height: 100%;
+              width: 80%;
+              justify-content: flex-start;              
+
+              &-text{
+                font-size: 2.5rem;
+                align-self: center;
+                font-family: 'Rajdhani', sans-serif;
+                font-weight: 500;
+                color: $white-color;
+                margin-left: 2%;
+              }
+            }
+            @include respond(maxNavBar){
+              width: 95%;
+              height: 100%;
+              padding: 1%;
+            }
+          }
+          @include respond(maxNavBar){
+            margin-top: 5%;
+          }
+        }
+        @include respond(maxNavBar){
+          width: 100%;
+        }
+      }
+
+      &-right{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        flex-direction: column;        
+
+        &-top{
+          display: flex;
+          width: 100%;
+          height: 10%;
+          justify-content: center;
+          background: linear-gradient(90deg, $light-blue-home 0%, $dark-blue-home 100%); 
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          &-content{
+            display: flex;
+            width: auto;
+            height: auto;
+            font-size: 2.2rem;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+            align-self: center;
+          }
+        }
+
+        &-middle{
+          display: flex;
+          width: 100%;
+          height: auto;          
+
+          &-content{
+            display: flex;
+            width: auto;
+            height: auto;
+            font-size: 1.2rem;
+            font-family: 'Cairo', sans-serif;
+            font-weight: 400;
+            align-self: center;
+            text-align: justify;
+            hyphens: auto;
+            padding: 2%;
+          }
+        } 
+        
+        &-bottom{
+          display: flex;
+          width: 100%;
+          height: auto; 
+          margin-top: 3%;   
+
+          &-form{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            height: auto;            
+            
+            &-label{
+              color: $red-favourite-color;
+              font-size: 1.4rem;
+              font-family: 'Rajdhani', sans-serif;
+              font-weight: 500;
+            }
+            
+            &-input{
+              width: 55%;
+              height: auto;
+              display: flex;
+              align-self: center;
+              font-size: 1.8rem;
+              font-family: 'Rajdhani', sans-serif;
+              margin-top: 2%;
+              border: none;
+              background-color: $ligth-gray-color;
+
+              @include respond(maxNavBar){
+                width: 100%;
+              }
+            }
+
+            &-textarea{
+              width: 55%;
+              height: 20vh;
+              display: flex;
+              border: none;
+              align-self: center;
+              font-size: 1.8rem;
+              font-family: 'Rajdhani', sans-serif;
+              margin-top: 2%;
+              background-color: $ligth-gray-color;
+
+              @include respond(maxNavBar){
+                width: 100%;
+              }
+              
+            }
+
+            &-send{
+              display: flex;
+              width: 30%;
+              height: 8vh;
+              align-self: center;
+              margin-top: 2%;
+              background: linear-gradient(90deg, $light-blue-home 0%, $dark-blue-home 100%);
+              justify-content: center;
+              cursor: pointer;
+              box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+
+              &-content{
+                display: flex;                
+                font-size: 2.2rem;
+                align-self: center;
+                font-family: 'Rajdhani', sans-serif;
+                font-weight: 500;
+                color: $white-color;
+              }
+
+              @include respond(maxNavBar){
+                width: 60%;
+              }
+            }
+          }
+        }
+        @include respond(maxNavBar){
+          width: 100%;
+          margin-top: 3%;
+        }
+      } 
+      @include respond(maxNavBar){
+        flex-direction: column;
+      }     
+      
+    }
+    
+  }
+
+}
+
+.gitBackground{
+  background-color: $light-black-color;
+}
+
+.facebookBackground{
+  background-color: $facebook-blue;
+}
+
+.instagramBackground{
+  background: linear-gradient(320deg, #fcb045, #fd1d1d, #833ab4);
+}
+
+.missingData{
+  border: solid 1px $red-favourite-color;
+}
+
+.succesMsg{
+  color: $light-black-color;
+}

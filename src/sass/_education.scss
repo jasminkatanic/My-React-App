@@ -1,0 +1,146 @@
+.education{
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;  
+
+  &-top{
+    display: flex;
+    width: 100%;
+    height: 10vh; 
+    
+    @include respond(maxNavBar){
+      height: 0;
+      width: 0;
+      display: none;
+    }
+     
+  }
+
+  &-bottom{
+    display: flex;
+    width: 100%;
+    height: 318vh;
+    justify-content: center;  
+    
+
+    &-content{
+      display: flex;
+      align-self: center; 
+      width: 95%;
+      height: 100%;
+      //background: linear-gradient(90deg, $light-blue-home 0%, $dark-blue-home 100%);
+      justify-content: center;
+
+      &-inner{
+        display: flex;
+        align-self: center;        
+        width: 99%;
+        height: 99%;
+        background-color: $white-color;
+        flex-direction: column;
+
+        &-list{
+          display: flex;
+          width: 100%;
+          height: auto;          
+          justify-content: center;
+          flex-direction: column;           
+           
+          &:first-child{
+            margin-top: 2%;
+          }
+          
+          &-head{            
+            font-size: 3rem;
+            font-family: 'Rajdhani', sans-serif;
+            align-self: flex-start;
+            margin-left: 5%;
+
+            
+          }
+
+          &-item{
+            align-self: center;
+            display: flex;
+            width: 90%;
+            height: 20vh;
+            background: linear-gradient(185deg, $light-blue-home 0%, $dark-blue-home 100%);
+            margin-top: 2%;
+            flex-direction: column; 
+            justify-content: center; 
+            
+            &:last-child{
+              margin-bottom: 2%;
+            }
+
+            &-content{
+              display: flex;
+              width: 99%;
+              height: 90%;
+              flex-direction: column;
+              background: $white-color;
+              align-self: center;
+              
+
+              &-top{
+                display: flex;
+                width: 100%;
+                height: 40%;
+                justify-content: center; 
+                background: linear-gradient(90deg, $light-blue-home 0%, $dark-blue-home 100%); 
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;             
+  
+                &-content{
+                  font-size: 2rem;
+                  align-self: center;
+                  font-family: 'Rajdhani', sans-serif;
+                  font-weight: 600;                  
+                }
+              }
+  
+              &-middle{
+                display: flex;
+                width: 100%;
+                height: 30%;
+                justify-content: center;              
+  
+                &-content{
+                  font-size: 1.5rem;
+                  align-self: center;
+                  font-family: 'Cairo', sans-serif;
+                  color: $light-black-color;
+                }
+              }
+  
+              &-bottom{
+                display: flex;
+                width: 100%;
+                height: 30%;
+                justify-content: center;              
+  
+                &-content{
+                  font-size: 1.5rem;
+                  align-self: center;
+                  font-family: 'Cairo', sans-serif;
+                  color: $light-black-color;
+                }
+              }
+
+            }            
+          }
+        }
+      }
+      @include respond(maxNavBar){
+        background: $white-color;
+      }
+    }
+    @include respond(maxNavBar){
+      height: auto;
+    }
+  }
+  @include respond(maxNavBar){
+    height: auto;
+  }
+}

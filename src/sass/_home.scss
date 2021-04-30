@@ -1,0 +1,124 @@
+@import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap');
+@import "./animations";
+@import "./mixins";
+
+.home{
+  width: 100%;
+  height: 100vh;
+  background-color: $light-black-color;
+  justify-content: center;
+
+  &-content{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    height: 80%;
+    width: 70%;
+    background: linear-gradient(90deg, $light-blue-home 0%, $dark-blue-home 100%);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;    
+    animation: homeBlobAnimationLargeScreen 2s infinite alternate;
+    animation-fill-mode: both;
+
+
+    &-list{
+      height: 90%;
+      display: flex;      
+      flex-direction: column;      
+      justify-content: center;  
+      
+      &-content{
+        height: 60%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        &-first{
+          display: flex;
+          align-self: center;
+          font-size: 4rem;
+          font-family: 'Rajdhani', sans-serif;
+          color: $light-black-color;
+          font-weight: 500;
+          @include respond(maxNavBar){
+            font-size: 3rem;
+          }
+        }
+    
+        &-second{
+          display: flex;
+          align-self: center;
+          font-family: 'Cairo', sans-serif;
+          font-size: 6rem;
+          color: $light-black-color;
+
+          @include respond(maxNavBar){
+            font-size: 4rem;
+          }
+        }
+    
+        &-third{
+          display: flex;
+          align-self: center;
+          font-size: 3rem;
+          font-family: 'Rajdhani', sans-serif;
+          color: $light-black-color;
+          font-weight: 500;
+        }
+    
+        &-fourth{
+          display: flex;
+          align-self: center;
+          background-color: $light-blue-home;
+          padding: 1%;
+          border-radius: 5%;
+          box-shadow: 0px 8px 15px rgba($black-color, 0.1);
+          cursor: pointer;
+          
+          &-content{
+            display: flex;
+            align-self: center;
+            font-size: 3rem;
+            font-family: 'Rajdhani', sans-serif;            
+            margin-top: 5%;
+            font-weight: 500;
+
+            &-link{
+              text-decoration: none;
+              color: $white-color;
+            }
+
+            @include respond(maxNavBar){
+              margin: auto;
+            }
+          }
+
+          @include respond(maxNavBar){
+            width: 50%;
+          }
+    
+        }
+      }     
+
+    }
+
+    @include respond(maxNavBar){                                   
+      width: 100%;
+      height: 100%;
+      border-radius: none;
+      animation: none;
+      background: transparent;
+    }
+        
+  }
+
+  @include respond(maxNavBar){
+    background: linear-gradient(90deg, $light-blue-home 0%, $dark-blue-home 100%);
+  }
+}

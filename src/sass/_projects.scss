@@ -1,0 +1,209 @@
+.projects{
+  display: flex;
+  width: 100%;
+  height: 100vh;  
+  flex-direction: column;
+
+  &-top{
+    display: flex;
+    width: 100%;
+    height: 10%;    
+    
+    @include respond(maxNavBar){
+      height: 0;
+    }
+  }
+
+  &-bottom{
+    display: flex;
+    width: 100%;
+    height: 90%;    
+    justify-content: center;
+
+    &-content{
+      display: flex;
+      width: 95%;
+      height: 90%;
+      align-self: center;
+      
+
+      &-list{
+        display: flex;
+        width: 100%;
+        height: 50%;  
+        flex-direction: column;      
+
+        &-item{
+          display: flex;
+          width: 100%;
+          height: 100%;
+          background-color: $ligth-gray-color;          
+
+          &:not(:first-child){
+            margin-top: 3%;
+          }
+
+          &:last-child{
+            margin-bottom: 5%;
+          }
+
+          &-left{
+            display: flex;
+            width: 40%;
+            height: 100%;            
+
+            &-img{
+              width: 100%;
+              height: auto;
+            }
+            @include respond(maxNavBar){
+              width: 100%;
+            }
+          }
+
+          &-right{
+            display: flex;
+            width: 60%;
+            height: 100%;            
+            flex-direction: column;
+
+            &-top{
+              display: flex;
+              width: 100%;
+              height: 20%;              
+              justify-content: center;              
+              background: linear-gradient(90deg, $light-blue-home 0%, $dark-blue-home 100%); 
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent; 
+
+              &-content{
+                display: flex;
+                font-size: 2.2rem;
+                font-family: 'Rajdhani', sans-serif;
+                font-weight: 600;
+                align-self: center;
+              }
+            }
+
+            &-middle{
+              display: flex;
+              width: 100%;
+              height: 60%;              
+
+              &-content{
+                display: flex;
+                font-size: 1.5rem;
+                hyphens: auto;
+                padding: 2%;
+                text-align: justify;
+                font-family: 'Cairo', sans-serif;
+              }
+            }
+
+            &-bottom{
+              display: flex;
+              width: 100%;
+              height: 20%;
+              
+
+              &-left{
+                display: flex;
+                width: 50%;
+                height: auto;
+                background: linear-gradient(336deg, $light-blue-home 0%, $dark-blue-home 100%); 
+                text-decoration: none;
+                color: $black-color;
+
+                &-content{
+                  display: flex;
+                  width: 100%;
+                  height: 100%;                  
+
+                  &-left{
+                    display: flex;
+                    width: 40%;
+                    height: auto;
+                    align-self: center;
+                    font-size: 2rem;                   
+                    justify-content: flex-end;
+                  }
+
+                  &-right{
+                    display: flex;
+                    width: 60%;
+                    height: auto;
+                    font-size: 2rem;                    
+                    align-self: center;
+                    font-family: 'Rajdhani', sans-serif;
+                    font-weight: 500;
+                  }
+                }
+                @include respond(maxNavBar){
+                  width: 100%;
+                }
+              }
+
+              &-right{
+                display: flex;
+                width: 50%;
+                height: auto;
+                background-color: $light-black-color;
+                text-decoration: none;
+
+                &-content{
+                  display: flex;
+                  width: 100%;
+                  height: 100%;                  
+
+                  &-left{
+                    display: flex;
+                    width: 40%;
+                    height: auto;
+                    align-self: center;
+                    font-size: 2rem;                    
+                    justify-content: flex-end;
+                    color: $white-color;
+                  }
+
+                  &-right{
+                    display: flex;
+                    width: 60%;
+                    height: auto;
+                    font-size: 2rem;                    
+                    align-self: center;
+                    font-family: 'Rajdhani', sans-serif;
+                    font-weight: 500;
+                    color: $white-color;
+                  }
+                }
+                @include respond(maxNavBar){
+                  width: 100%;
+                }
+              }
+              @include respond(maxNavBar){
+                flex-direction: column;
+              }
+            }
+            @include respond(maxNavBar){
+              width: 100%;
+              height: auto;
+            }
+          }
+          @include respond(maxNavBar){
+            flex-direction: column;
+            height: auto;
+
+            &:first-child{
+              margin-top: 5%;
+            }
+          }
+        }
+        
+      }
+    }
+   
+  }
+  @include respond(maxNavBar){
+    height: auto;
+  }
+}

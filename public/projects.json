@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "Subscription Website",
+      "description": "One of my first projects uses strictly vanilla JS and Sass for the front-end, Google firebase is used for back-end, more specifically firebase with functions is used to authenticate users. This website also implements Direct Carrier Billing to charge for monthly subscription. As this is still an active project I cannot share with you this repository in order to protect my client, thank you for understanding.",
+      "img": "https://res.cloudinary.com/dznfwmloz/image/upload/v1619546741/img/cont/razgovori_jjjjo8.jpg",
+      "webUrl": "https://www.razgovaraj.ba/",
+      "gitUrl": "https://github.com/jasminkatanic/vahida-v6"
+    },
+    {
+      "id": "2",
+      "title": "Psychotherapist Website",
+      "description": "A professional static website built for a psychotherapist using React framework, it utilizes a few different layouts through the website. If you like the design help yourself to a repository and happy coding.",
+      "img": "https://res.cloudinary.com/dznfwmloz/image/upload/v1619548241/img/cont/psychotherapist-website_a45nhp.jpg",
+      "webUrl": "https://www.vahidadjedovic.com/",
+      "gitUrl": "https://github.com/jasminkatanic/Psychotherapist-Website"
+    },
+    {
+      "id": "3",
+      "title": "Cocktail Web App",
+      "description": "I built this web app using React framework, data used in the app is fetched from The Cocktail DB. In app you can fetch six random drinks, search for drinks by ingredient and search for drinks by alphabet. You can also add favorites and add ingredients to your shopping list. If you like the app or some part of it check out the repository.",
+      "img": "https://res.cloudinary.com/dznfwmloz/image/upload/v1619548668/img/cont/my-drink_uq6dj4.jpg",
+      "webUrl": "https://wizardly-davinci-175110.netlify.app/",
+      "gitUrl": "https://github.com/jasminkatanic/Cocktail-Web-App"
+    },
+    {
+      "id": "4",
+      "title": "My Web App With Animations",
+      "description": "My heavily animated domain built using react framework and is also the first project I decided to do use explicitly React framework. App utilizes different animations, charts and even 3D elements if you like app or some elements of it help yourself to the repository.",
+      "img": "https://res.cloudinary.com/dznfwmloz/image/upload/v1619549744/img/cont/havy-effects_nfgl5k.jpg",
+      "webUrl": "https://adoring-kilby-b6abeb.netlify.app/",
+      "gitUrl": "https://github.com/jasminkatanic/Animation-Loaded-App"
+    },
+    {
+      "id": "5",
+      "title": "This Web App",
+      "description": "Unlike previous React applications which mostly dependent on static data this web app uses useEffect and useState to fetch data from local JSON files. All the data on this site is presented through fetch and React render. If you like this app or some of its features help yourself to the repository.",
+      "img": "https://res.cloudinary.com/dznfwmloz/image/upload/v1619553883/img/cont/current-web_vetckj.jpg",
+      "webUrl": "https://adoring-kilby-b6abeb.netlify.app/",
+      "gitUrl": "https://github.com/jasminkatanic/Animation-Loaded-App"
+    }
+  ]
+}
